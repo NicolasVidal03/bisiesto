@@ -6,7 +6,11 @@ describe("Es bisiesto", () => {
   });
 
   it("El 5 no debería considerase como año bisiesto", () => {
-    expect(esBisiesto(5)).toEqual(5);
+    expect(esBisiesto(5)).toEqual(false);
+  });
+
+  it("El 400 debería considerase como año bisiesto", () => {
+    expect(esBisiesto(400)).toEqual(true);
   });
 
 
