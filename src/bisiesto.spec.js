@@ -13,6 +13,10 @@ describe("Es bisiesto", () => {
     expect(esBisiesto(400)).toEqual(true);
   });
 
+  it("Un año divisible entre 400 debería ser año bisiesto", () => {
+    expect(esBisiesto(800)).toEqual(true);
+  });
+
 
 
 });
