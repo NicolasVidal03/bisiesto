@@ -2,7 +2,7 @@ function esBisiesto(num) {
     if(num % 400 == 0){
         return true;
     }
-    if(num == 200)
+    if(num % 100 == 0 && num % 400 != 0)
     {
         return false;
     }
