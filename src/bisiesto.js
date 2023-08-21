@@ -6,7 +6,7 @@ function esBisiesto(num) {
     {
         return false;
     }
-    if(num == 4){
+    if(num % 4 == 0){
         return true;
     }
     return false;

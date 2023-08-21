@@ -24,6 +24,9 @@ describe("Es bisiesto", () => {
   it("Divisibles entre 100 (menos div entre 400) no deberían considerase como años bisiestos", () => {
     expect(esBisiesto(200)).toEqual(false);
   });
-
+  
+  it("Divisibles entre 4 menos entre 100 son bisiestos", () => {
+    expect(esBisiesto(8)).toEqual(true);
+  });
 
 });
